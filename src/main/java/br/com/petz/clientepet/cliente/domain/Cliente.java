@@ -1,6 +1,7 @@
 package br.com.petz.clientepet.cliente.domain;
 
 import java.time.LocalDate;
+
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -40,6 +41,7 @@ public class Cliente {
 	@NotNull
 	private LocalDate dataNascimento;
 	@CPF
+	@Column(unique = true)
 	private String cpf;
 	@NotNull
 	private Boolean aceitaTermos;
@@ -54,7 +56,7 @@ public class Cliente {
 		this.telefone = clienteRequest.getTelefone();
 		this.sexo = clienteRequest.getSexo();
 		this.dataNascimento = clienteRequest.getDataNascimento();
-		this.cpf = clienteRequest.getCelular();
+		this.cpf = clienteRequest.getCpf();
 		this.aceitaTermos = clienteRequest.getAceitaTermos();
 		this.dataHoraDoCadastro = LocalDateTime.now();
 	}
