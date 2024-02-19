@@ -1,14 +1,7 @@
 package br.com.petz.clientepet.pet.application.api;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.UUID;
-
-import javax.persistence.Column;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 
 import br.com.petz.clientepet.pet.domain.Porte;
 import br.com.petz.clientepet.pet.domain.SexoPet;
