@@ -38,7 +38,7 @@ public class Pet {
 	@Enumerated(EnumType.STRING)
 	private tipoPet tipo;
 	private String microchip;
-	private String raça;
+	private String raca;
 	@Enumerated(EnumType.STRING)
 	private SexoPet sexo;
 	private String pelagemCor;
@@ -57,7 +57,7 @@ public Pet(UUID idCliente, @Valid PetRequest petRequest) {
 	this.porte = petRequest.getPorte();
 	this.tipo = petRequest.getTipo();
 	this.microchip = petRequest.getMicrochip();
-	this.raça = petRequest.getRaca();
+	this.raca = petRequest.getRaca();
 	this.sexo = petRequest.getSexo();
 	this.pelagemCor = petRequest.getPelagemCor();
 	this.dataNascimento = petRequest.getDataNascimento();
