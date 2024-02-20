@@ -13,6 +13,6 @@ import br.com.petz.clientepet.pet.application.api.PetResponse;
 public interface PetService {
 	PetResponse criaPet(UUID idCliente, @Valid PetRequest petRequest);
 	List<PetClienteListResponse> buscaPetsDoClienteComId(UUID idCliente);
-	PetClienteDetalheResponse buscaPetDoClienteComId(UUID idCliente);
+	PetClienteDetalheResponse buscaPetDoClienteComId(UUID idCliente, UUID idPUuid);
 
 }
